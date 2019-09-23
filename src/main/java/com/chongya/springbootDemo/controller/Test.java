@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class Test {
     @GetMapping(value = "test")
     public String Test(){
+        return "Test_Jenkins";
+    }
+
+    @GetMapping(value = "hello")
+    public String Hello(){
         return "hello world";
     }
 }
